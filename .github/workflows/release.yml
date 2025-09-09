@@ -39,6 +39,7 @@ jobs:
       shell: bash
 
     - name: Build binary with PyInstaller
+      shell: bash
       run: |
         pyinstaller --name ${{ steps.binary_name.outputs.binary_name }} \
                     --onefile \
